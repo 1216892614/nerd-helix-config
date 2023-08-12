@@ -1,0 +1,93 @@
+theme = "sonokai"
+
+[editor]
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+j = "move_char_left"
+l = "move_char_right"
+k = "move_visual_line_down"
+i = "move_visual_line_up"
+
+J = "goto_line_start"
+L = ["goto_line_end", "move_char_right"]
+K = "page_down"
+I = "page_up"
+
+h = "insert_mode"
+
+C-j = "move_prev_word_start"
+C-l = "move_next_word_end"
+
+A-k = ["extend_to_line_bounds", "yank", "delete_selection", "paste_after"]
+A-i = ["extend_to_line_bounds", "yank", "delete_selection", "move_visual_line_up", "paste_before"]
+A-K = ["extend_to_line_bounds", "yank", "paste_after"]
+A-I = ["extend_to_line_bounds", "yank", "paste_before"]
+
+A-C-i = "copy_selection_on_prev_line"
+A-C-k = "copy_selection_on_next_line"
+
+ret = "open_below"
+
+y = ["extend_to_line_bounds", "yank"]
+
+u = "jump_backward"
+o = "jump_forward"
+
+z = "undo"
+Z = "redo"
+A-z = "earlier"
+A-Z = "later"
+
+c = "yank"
+
+esc = ["keep_primary_selection", "flip_selections"]
+C = "toggle_comments"
+
+[keys.select]
+j = "extend_char_left"
+l = "extend_char_right"
+k = "extend_visual_line_down"
+i = "extend_visual_line_up"
+
+y = ["extend_to_line_bounds", "yank"]
+
+A-k = ["extend_to_line_bounds", "yank", "delete_selection", "paste_after", "normal_mode"]
+A-i = ["extend_to_line_bounds", "yank", "delete_selection", "move_visual_line_up", "paste_before", "normal_mode"]
+A-K = ["extend_to_line_bounds", "yank", "paste_after", "normal_mode"]
+A-I = ["extend_to_line_bounds", "yank", "paste_before", "normal_mode"]
+
+C = ["toggle_comments", "normal_mode"]
+
+ret = ["open_below", "normal_mode"]
+
+J = "goto_line_start"
+L = "goto_line_end"
+K = "page_down"
+I = "page_up"
+
+[keys.insert]
+A-j = "move_char_left"
+A-l = "move_char_right"
+A-k = "move_visual_line_down"
+A-i = "move_visual_line_up"
+
+"C-;" = ["keep_primary_selection", "flip_selections"]
+
+A-C-j = "move_prev_word_start"
+A-C-l = "move_next_word_end"
+
+
+[keys.normal."C-w"]
+j = "jump_view_left"
+l = "jump_view_right"
+k = "jump_view_down"
+i = "jump_view_up"
